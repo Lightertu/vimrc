@@ -50,4 +50,7 @@ inoremap <BS> <Nop>
 inoremap <Del> <Nop>
 
 " disable syntax linting
-let g:syntastic_mode_map = { 'mode': 'passive' }
+" let g:syntastic_mode_map = { 'mode': 'passive' }
+
+map <leader>e :e! ~/.vim_runtime/my_configs/my_configs.vim<cr>
+autocmd! bufwritepost vimrc source ~/.vim_runtime/my_configs/my_configs.vim
