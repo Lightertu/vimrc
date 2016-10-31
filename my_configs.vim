@@ -43,7 +43,7 @@ let g:syntastic_cpp_compiler_options = "-std=c++11 -Wall -Wextra -Wpedantic"
 " ycm off
 " nnoremap <leader>Y :let g:ycm_auto_trigger=0<CR>                
 " ycm on
-" nnoremap <leader>y :let g:ycm_auto_trigger=1<CR>                
+nnoremap <leader>y :let g:ycm_auto_trigger=1<CR>                
 
 " disable DELTE key
 inoremap <BS> <Nop>
