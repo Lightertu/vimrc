@@ -59,21 +59,17 @@ let g:ycm_server_use_vim_stdout = 1
 let g:ycm_server_log_level = 'debug'
 let g:ycm_show_diagnostics_ui = 0
 let g:ycm_confirm_extra_conf = 0
-let g:ycm_semantic_triggers =  {
-  \   'c' : ['->', '.'],
-  \   'objc' : ['->', '.', 're!\[[_a-zA-Z]+\w*\s', 're!^\s*[^\W\d]\w*\s',
-  \             're!\[.*\]\s'],
-  \   'ocaml' : ['.', '#'],
-  \   'cpp,objcpp' : ['->', '.', '::'],
-  \   'perl' : ['->'],
-  \   'php' : ['->', '::'],
-  \   'cs,java,javascript,typescript,d<Plug>PeepOpenython<Plug>PeepOpenerl6,scala,vb,elixir,go' : ['.'],
-  \   'ruby' : ['.', '::'],
-  \   'lua' : ['.', ':'],
-  \   'erlang' : [':'],
-  \ }
-
+let g:ycm_autoclose_preview_window_after_completion = 1
+let g:ycm_autoclose_preview_window_after_insertion = 1
+let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
+let g:SuperTabDefaultCompletionType = '<C-n>'
 
 " overwrite 
 map <leader>e :e! ~/.vim_runtime/my_configs/my_configs.vim<cr>
 autocmd! bufwritepost vimrc source ~/.vim_runtime/my_configs/my_configs.vim
+
+try 
+source ~/.vim_runtime/my_configs/bundlerc.vim
+catch
+endtry
