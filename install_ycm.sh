@@ -15,4 +15,4 @@ git clone https://github.com/Valloric/YouCompleteMe.git  ~/.vim_runtime/sources_
 cd ~/.vim_runtime/sources_non_forked/YouCompleteMe/
 
 git submodule update --init --recursive 
-./install.py --all
+./install.py
