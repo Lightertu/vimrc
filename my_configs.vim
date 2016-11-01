@@ -10,7 +10,7 @@ nmap <silent> <A-up>:wincmd j<CR>
 nmap <silent> <A-up>:wincmd h<CR>
 nmap <silent> <A-up>:wincmd l<CR>
 nnoremap <C-j> :tabprevious<CR>
-nnoremap <C-l> :tabnext<CR>
+nnoremap <C-k> :tabnext<CR>
 inoremap <BS> <Nop>
 inoremap <Del> <Nop>
 
@@ -40,16 +40,16 @@ highlight nonText ctermbg=NONE
 " Syntastic setting
 " let g:syntastic_mode_map = { 'mode': 'passive' }
 "let g:syntastic_cpp_compiler_options = "-std=c++11 -Wall -Wextra -Wpedantic"
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-let g:syntastic_aggregate_errors = 1
-let g:syntastic_cpp_check_header = 1
-let g:syntastic_c_check_header = 1
+" set statusline+=%#warningmsg#
+" set statusline+=%{SyntasticStatuslineFlag()}
+" set statusline+=%*
+" let g:syntastic_always_populate_loc_list = 1
+" let g:syntastic_auto_loc_list = 1
+" let g:syntastic_check_on_open = 1
+" let g:syntastic_check_on_wq = 0
+" let g:syntastic_aggregate_errors = 1
+" let g:syntastic_cpp_check_header = 1
+" let g:syntastic_c_check_header = 1
 let g:syntastic_c_compiler = 'clang'
 let g:syntastic_cpp_compiler = 'clang++'
 
@@ -64,6 +64,7 @@ let g:ycm_autoclose_preview_window_after_insertion = 1
 let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
 let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
 let g:SuperTabDefaultCompletionType = '<C-n>'
+                                            
 
 " overwrite 
 map <leader>e :e! ~/.vim_runtime/my_configs/my_configs.vim<cr>
