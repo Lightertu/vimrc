@@ -38,18 +38,6 @@ highlight Normal ctermbg=NONE
 highlight nonText ctermbg=NONE
 
 " Syntastic setting
-" let g:syntastic_mode_map = { 'mode': 'passive' }
-"let g:syntastic_cpp_compiler_options = "-std=c++11 -Wall -Wextra -Wpedantic"
-" set statusline+=%#warningmsg#
-" set statusline+=%{SyntasticStatuslineFlag()}
-" set statusline+=%*
-" let g:syntastic_always_populate_loc_list = 1
-" let g:syntastic_auto_loc_list = 1
-" let g:syntastic_check_on_open = 1
-" let g:syntastic_check_on_wq = 0
-" let g:syntastic_aggregate_errors = 1
-" let g:syntastic_cpp_check_header = 1
-" let g:syntastic_c_check_header = 1
 let g:syntastic_c_compiler = 'clang'
 let g:syntastic_cpp_compiler = 'clang++'
 
