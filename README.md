@@ -9,5 +9,5 @@ sh ~/my_configs/install_vimrc.sh
 
 ## install YouCompleteMe
 ```bash
-sh ~/.vim_runtime/my_configs/install_vimrc.sh
+sh ~/.vim_runtime/my_configs/install_ycm.sh
 ```
