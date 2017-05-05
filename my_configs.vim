@@ -36,16 +36,7 @@ highlight nonText ctermbg=NONE
 
 " Syntastic setting
 " let g:syntastic_mode_map = { 'mode': 'passive' }
-" set statusline+=%#warningmsg#
-" set statusline+=%{SyntasticStatuslineFlag()}
-" set statusline+=%*
-" let g:syntastic_always_populate_loc_list = 1
-" let g:syntastic_auto_loc_list = 1
-" let g:syntastic_check_on_open = 1
-" let g:syntastic_check_on_wq = 0
-" let g:syntastic_aggregate_errors = 1
-" let g:syntastic_cpp_check_header = 1
-" let g:syntastic_c_check_header = 1
+
 let g:syntastic_c_compiler = 'clang'
 let g:syntastic_cpp_compiler = 'clang++'
 
@@ -65,9 +56,12 @@ let g:SuperTabDefaultCompletionType = '<C-n>'
 " overwrite 
 map <leader>e :e! ~/.vim_runtime/my_configs/my_configs.vim<cr>
 autocmd! bufwritepost vimrc source ~/.vim_runtime/my_configs/my_configs.vim
+<<<<<<< HEAD
 
 try
 source ~/.vim_runtime/my_configs/bundlerc.vim
 catch
 endtry
 
+=======
+>>>>>>> 392c18af4488774777ce0d3e5c5a68e8f95acb5f
