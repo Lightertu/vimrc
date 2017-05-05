@@ -11,8 +11,6 @@ nmap <silent> <A-up>:wincmd h<CR>
 nmap <silent> <A-up>:wincmd l<CR>
 nnoremap <C-j> :tabprevious<CR>
 nnoremap <C-k> :tabnext<CR>
-inoremap <BS> <Nop>
-inoremap <Del> <Nop>
 
 " set absolute and relative lines
 set relativenumber 
@@ -31,7 +29,6 @@ endif
 
 " set colorscheme
 " colorscheme solarized-dark
-" colorscheme onedark
 
 "highlight Normal ctermfg=grey ctermbg=black
 highlight Normal ctermbg=NONE
@@ -39,7 +36,6 @@ highlight nonText ctermbg=NONE
 
 " Syntastic setting
 " let g:syntastic_mode_map = { 'mode': 'passive' }
-"let g:syntastic_cpp_compiler_options = "-std=c++11 -Wall -Wextra -Wpedantic"
 " set statusline+=%#warningmsg#
 " set statusline+=%{SyntasticStatuslineFlag()}
 " set statusline+=%*
@@ -70,7 +66,8 @@ let g:SuperTabDefaultCompletionType = '<C-n>'
 map <leader>e :e! ~/.vim_runtime/my_configs/my_configs.vim<cr>
 autocmd! bufwritepost vimrc source ~/.vim_runtime/my_configs/my_configs.vim
 
-try 
+try
 source ~/.vim_runtime/my_configs/bundlerc.vim
 catch
 endtry
+
