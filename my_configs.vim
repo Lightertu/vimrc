@@ -56,12 +56,8 @@ let g:SuperTabDefaultCompletionType = '<C-n>'
 " overwrite 
 map <leader>e :e! ~/.vim_runtime/my_configs/my_configs.vim<cr>
 autocmd! bufwritepost vimrc source ~/.vim_runtime/my_configs/my_configs.vim
-<<<<<<< HEAD
 
 try
 source ~/.vim_runtime/my_configs/bundlerc.vim
 catch
 endtry
-
-=======
->>>>>>> 392c18af4488774777ce0d3e5c5a68e8f95acb5f
